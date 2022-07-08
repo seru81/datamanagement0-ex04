@@ -29,5 +29,7 @@ public class HeadsOrTails{
             System.out.println("Round " + i + ": " + Coin.toss());
         }
         System.out.println("Heads: " + Coin.getHeads() + ", Tails: " + Coin.getTails());
+        if (Coin.getHeads() > Coin.getTails()) System.out.println("You won");
+        else System.out.println("You lost");
     }
 }
