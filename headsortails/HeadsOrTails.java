@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 class Coin{
     private static int heads;
     private static int tails;
@@ -24,6 +26,10 @@ class Coin{
 
 public class HeadsOrTails{
     public static void main (String[] arg) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Who are you?");
+        String playername = sc.nextLine();
+        System.out.println("Hello, " + playername + "!");
         System.out.println("Tossing a coin...");
         for (int i = 0; i < 3; i++) {
             System.out.println("Round " + i + ": " + Coin.toss());
